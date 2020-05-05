@@ -1,0 +1,12 @@
+
+def string_loop(word, vowels): 
+    #print (word)
+    #print (vowels)
+    final = [each for each in word if each in vowels]
+    #print (final)
+    return final
+
+word = "An good idea"
+vowels=['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+final = string_loop (word, vowels)
+print(final)
