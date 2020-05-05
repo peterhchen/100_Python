@@ -1,0 +1,31 @@
+L = [1, 2, 3]
+T = (1, L, 3)
+print ('T', T)
+L[1] = 0
+print ('T = (1, L, 3), L[1] = 0 => T:', T)
+# Tuple does not support item assignment
+# T[1] = 0
+friends = ['Abe', 'Bob', 'Carl']
+enemies = friends[:]
+enemies[1] = 'Brian'
+print ('enemies:', enemies)
+print ('friends:', friends)
+
+# Bad way because you make your firend vulnerable:
+# mess up your friends with enemies
+friends1 = ['Abe', 'Bob', 'Carl']
+enemies1 = friends1
+enemies1[1] = 'Brian'
+print ('enemies1:', enemies1)
+print ('friends1:', friends1)
+
+# Draw a line from each objects to its mutability:
+# numbers ----------> immutable
+# strings ----------> immutable
+# tupples  ---------> immutable
+# lists   ----------> mutable
+# dictionaries -----> mutable
+# dictionary key ---> immutable
+# Note: 
+# int, float, complex, string, tuple, fronze set, bytes are immutable
+# list, dict, set, byte array are mutable
